@@ -51,7 +51,7 @@ return Math.sqrt(((x - x1) ** 2) + ((y - y1) ** 2));
 /* block 4 */
 const str = "MjQyNDI4NzczNDQ0MjgwNjQ3Njg=bMTk2MTc2ODAxMTY0MTIzMTc2OTY=bMTk2MzQ1Njg0OTI2MDgzODkxMjA=bMA==";
 res = res.concat(str.split("b").map(b => atob(b)));
-/* const datetime = new Date(1997, 7, 24); weird timezone issue */
+/* const datetime = new Date(1997, 7, 24); weird timezone issue -- ALASKA TIME ZONE GMT-8*/
 const datetime = new Date(1997, 7, 24, 8);
 res.push(
 	datetime. toString().slice(11, 13) +
